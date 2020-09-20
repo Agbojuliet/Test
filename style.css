@@ -1,0 +1,264 @@
+
+* {
+    box-sizing: border-box ;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 0px;
+    background-color: white;
+    color: gray;
+}
+/* ---- header section ----*/
+header {
+    padding-top: 30px;
+    min-height: 70;
+    
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+header ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+header li {
+   display: inline;
+   padding: 0 20px 0 20px;
+}
+header #logo {
+    float: left;
+}
+header .current a {
+    color: red;
+}
+
+#logo h2 {
+    color: red;
+    float: right;
+    margin: 10px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+/* ---- home page ---- */
+
+.home {
+    display: flex;
+}
+/* ---- our service ---- */
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+}
+.service div {
+    margin: 30px;
+    width: 25%;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center; 
+   box-shadow: 2px 2px 2px 2px lightgray ;
+}
+/* ---- detailed statitics ---- */
+
+.sta {
+    display: flex;
+    background-color: lightgray;
+}
+/* ---- Awesome features ---- */
+
+#awesome {
+    display: flex;
+}
+#awesome .first img {
+    float: right;
+}
+.first {
+    text-align: right;
+}
+#awesome .first div {
+    box-shadow: 2px 2px 2px 2px lightgray ;
+}
+
+.second div {
+    box-shadow: 2px 2px 2px 2px lightgray ; 
+}
+#awesome div img {
+    float: left;
+}
+/* ---- meet our team ---- */
+.team {
+    display: flex;
+    background-color: red;
+}
+.team div  {
+    background-color: white;
+    margin: 30px;
+    width: 25%;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center; 
+}
+/* ---- pricing ---- */
+
+.price {
+    display: flex;
+}
+.price div  {
+    margin: 30px;
+    width: 25%;
+    padding: 20px;
+    
+    text-align: center; 
+   box-shadow: 2px 2px 2px 2px lightgray ;
+}
+/* ---- contact us ---- */
+
+.contact {
+    display: flex;
+    background-color: lightgray;
+}
+.contact div {
+    margin: 30px;
+    padding: 20px;
+    overflow: hidden;
+}
+/* ---- buttons---- */
+button {
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border-color: red;
+}
+#btn2 {
+    background-color: white;
+    color: red;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border-color: red;
+}
+h1,h2,h3,h4 {
+
+    color: black;
+}
+#h1 {
+    text-align: center;
+    text-decoration: underline red;
+}
+/* ---- footer ---- */
+.end {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    
+}
+.finish {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    
+    
+}
+ footer {
+     width: 100%;
+     overflow: auto;
+}
+ .finish ul a {
+   text-decoration: none;
+    
+ }
+ ul {
+    list-style-type: none;
+ }
+ a {
+     color: black;
+ }
+ #items {
+    text-align: center;
+
+ }
+ #items ul li {
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 5px;
+    margin: 5px;
+ }
+ #icons {
+    display: flex;
+}
+#logo p {
+    float: right;
+    margin: 0px;
+    padding-right: 70px;
+}
+.least {
+    display: flex;
+}
+.least div {
+    margin: 10px;
+    padding: 10px;
+    
+}
+#copyright {
+    color: black;
+    text-align: center;
+    border-top: 5px solid lightgray ;
+}
+/* ---- media query for responsivness ---- */
+    @media screen and (max-width: 600px) {
+        button {
+            width: 80px;
+            font-size: 10px;
+        }
+        #btn2 {
+            width: 80px;
+            font-size: 10px;
+        }
+        .home img {
+            width: 300px;
+        }
+        .sta img {
+            width: 300px;
+        }
+        #awesome .ph img {
+            width: 300px;
+        }
+        #awesome div {
+            width: 250px;
+        }
+        .contact div {
+            flex: 50px;
+            margin: 30px;
+    padding: 20px;
+    overflow: hidden;
+    width: 100px;
+        }
+        .team {
+            flex: 50px;
+        }
+        .service {
+            flex: 50px;
+        }
+        .price div {
+            font-size: 15px;
+            margin: 30px;
+    width: 25%;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center; 
+   box-shadow: 2px 2px 2px 2px lightgray ;
+        }
+       
+    }
